@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spotify - Web Player: Music for everyone</title>
+
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+ 
+       <div class="containermain">
+
+         <div class="sidebar">
+
+            <div class="sidebarinner">
+
+                <div class="logo link-flex">
+                    <img  width="150px" style="padding: 10px;" src="./sidebarasset/Spotify logo.png" alt="">
+                </div>
+    
+                <div class="section1" >
+                    <div style="background-color: rgba(40, 40, 40, 1); border-radius: 2px;;" class="home">
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/Home.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;"  target="_blank">Home</a>
+                        
+                    </div>
+                    <div class="search">
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/01 align center.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Search</a>
+                        
+                    </div>
+                    <div class="library">
+                        <img class="sideicon" style="margin: 10px ;" src="./sidebarasset/library.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Library</a>
+                        
+                    </div>
+                </div>
+    
+    
+                <div class="section2">
+                    <div class="createplaylist">
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/plus.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Create Playlist</a>   
+                    </div>
+                    <div class="likedsong">
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/purpleheart.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Liked Songs</a>
+                    </div>
+    
+                    <div class="yourepisode">
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/hotspot.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Your Episode</a>
+                    </div>
+                </div>
+    
+                <div class="section3" style="margin: 10px ;">
+                    <div><a href="./index2.html" target="_blank">FAV</a></div>
+                    <div><a href="./index2.html" target="_blank">Daily Mix 1</a></div>
+                    <div><a href="./index2.html" target="_blank">Discover Weekly</a></div>
+                    <div><a href="./index2.html" target="_blank">Malayalam</a></div>
+                    <div><a href="./index2.html" target="_blank">Dance / Electronix Mix</a></div>
+                    <div><a href="./index2.html" target="_blank">EDM / Popular</a></div>
+                </div>
+    
+                <div class="section4">
+                    <div>
+                        <img style="margin: 10px ;" class="sideicon" src="./sidebarasset/download.png" alt="">
+                        <a href="./index2.html" style="padding-left: 10px;" target="_blank">Install App</a>
+                    </div>
+             
+                </div> 
+
+            </div>
+
+         </div>
+
+        <div class="maincontent">
+
+            <div class="headermaincontent d-flex justify-content-between" style="margin-top: 10px;">
+
+                <div>
+                    <img width="35px" style="margin-left: 10px;" src="./maincontentasset/backward.png" alt="">
+                    <img width="35px" src="./maincontentasset/forward.png" alt="">
+                </div>
+
+                <div class="d-flex align-items-center" style="padding-right: 10px; margin-right: 10px; height:35px; border-radius: 12px; background-color: black; color: rgba(255,255,255,1);
+                ">
+                    <img height="30px" src="./maincontentasset/profile.png" alt="">
+                    <span style="margin-left: 10px;">Angel</span>
+                    <img src="./maincontentasset/down.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="gm">Good Morning</div>
+
+            <div class="hero1">
+                <div>
+                    <img style="height: 70px;" src="./maincontentasset/Purple-big.png" alt="">
+                    <div style="padding-left: 15px;"> Liked Songs</div>
+                   
+                </div>
+
+                <div>
+                    <img style="height: 70px;" src="./maincontentasset/man.png" alt="">
+                   
+                    <div style="padding-left: 15px;"> Neffex Playlist</div>
+                </div>
+                <div>
+                    <img style="height: 70px;" src="./maincontentasset/KDA.png" alt="">
+                    <div style="padding-left: 15px;"> K/ DA</div>
+                   
+                </div>
+                <div>
+                    <img style="height: 70px;" src="./maincontentasset/marshmellow.png" alt="">
+                    <div style="padding-left: 15px;"> Dance / Electronic Mix</div>
+                   
+                </div>
+            </div>
+
+            <div class="show d-flex justify-content-between">
+                <div>Shows you might like</div>
+                <div><a href="./index2.html" target="_blank" style="text-decoration: none; color:rgba(179, 179, 179, 1);
+                font-size: 15px;">SEE ALL</a></div>
+            </div>
+
+
+            <div class="hero2">
+                <div>
+                    <img width="100%"  src="./maincontentasset/Rectangle 21.png" alt="">
+                   <span class="uppername">Weekly Motivatio... </span> <br>
+                    <span class="lowername">Ben Ina Scott</span>
+                </div>
+               
+                <div>
+                    <img width="100%"src="./maincontentasset/Rectangle 22.png" alt="">
+              <span class="uppername">MEDITATION SELF </span>      <br>
+                    <span class="lowername">Ibn Hussain Aleen</span>
+                </div>
+                
+                <div>
+                    <img width="100%" src="./maincontentasset/Rectangle 23.png" alt="">
+                    <span class="uppername">Words beyond act...</span> <br>
+                    <span class="lowername">Samuel Scott</span>
+                </div>
+                
+                <div>
+                    <img width="100%" height="80%" src="./maincontentasset/Rectangle 16.png" alt="">
+                    <span class="uppername">The Alexa Show</span><br>
+                    <span class="lowername">Adriana Tom</span>
+                </div>
+
+                <div>
+                    <img width="100%" height="80%" src="./maincontentasset/Rectangle 16.png" alt="">
+                    <span class="uppername">The Alexa Show</span><br>
+                    <span class="lowername">Adriana Tom</span>
+                </div>
+
+                <div>
+                    <img width="100%" height="80%" src="./maincontentasset/Rectangle 16.png" alt="">
+                    <span class="uppername">The Alexa Show</span><br>
+                    <span class="lowername">Adriana Tom</span>
+                </div>
+
+                <div>
+                    <img width="100%" height="80%" src="./maincontentasset/Rectangle 16.png" alt="">
+                    <span class="uppername">The Alexa Show</span><br>
+                    <span class="lowername">Adriana Tom</span>
+                </div>
+
+                <div>
+                    <img width="100%" height="80%" src="./maincontentasset/Rectangle 16.png" alt="">
+                    <span class="uppername">The Alexa Show</span><br>
+                    <span class="lowername">Adriana Tom</span>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            <div style="margin:150px"></div>
+
+
+        </div>
+
+
+       </div>
+
+
+
+       <div class="player d-flex justify-content-between">
+
+        <div class="d-flex align-items-center" style="padding-right: 10px;">
+            <div>  <img height="55em" src="./sidebarasset/playing-img.png" alt=""> </div>
+            <div style="padding-left: 10px;">
+                <span style="color: rgba(255, 255, 255,1);
+                font-family: DM Sans;font-size: 15px;font-weight: 700; ">Dreamming On</span><br>
+                <span style="color: rgba(179, 179, 179, 1);  font-family: DM Sans;font-size: 12px;font-weight: 700;">NEFFEX</span>
+            </div>
+            <div ><img src="./sidebarasset/heart.png"  alt=""></div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center"  >
+            <div style="margin-top: 2%;"><img width="25px"  src="./sidebarasset/shuffle.png" alt="">
+                <img width="25px" src="./sidebarasset/previous.png" alt="">
+                <img width="25px"  src="./sidebarasset/gridicons_play.png" alt="">
+                <img width="25px"  src="./sidebarasset/next.png" alt="">
+                <img width="25px" src="./sidebarasset/loop.png" alt="">
+            </div>
+            <div>
+                <span style="color: white;">2.11</span>
+               <img width="200px" src="./sidebarasset/musicbar.png" alt=""> 
+              <span style="color: white;">2.42</span>
+            </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between">
+            <img style="padding-left: 10px;" src="./sidebarasset/microphone.png" alt="">
+            <img style="padding-left: 10px;"  src="./sidebarasset/query-queue.png" alt="">
+            <img style="padding-left: 10px;"  src="./sidebarasset/carbon_laptop.png" alt="">
+            <img style="padding-left: 10px;"  src="./sidebarasset/speaker-white.png" alt="">
+            <img style="padding-left: 10px;"  src="./sidebarasset/volume-bar.png" alt="">
+            <img style="padding-left: 10px;"  src="./sidebarasset/strech-speaker.png" alt="">
+        </div>
+
+
+       </div>
+        <div class="footerline"> <img src="./sidebarasset/speaker-black.png" alt=""> Listening on ASUS-ROG-G531GT</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="container"> -->
+
+                <!-- <div class="sidebar" style="padding: 20px;">
+        
+                   
+        
+        
+        
+                </div>
+                <div class="maincontent"></div>
+                 -->
+
+
+            <!-- </div> -->
+
+
+            <!-- <div class="sidebar"></div>
+            <div class="maincontent"></div>
+            <div class="player"></div>
+            <div class="footerline"></div> -->
+
+
+
+        </div>
+    </main>
+
+   
+
+    </body>
+</html>
